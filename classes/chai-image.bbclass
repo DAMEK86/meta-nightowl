@@ -36,12 +36,4 @@ EXTRA_IMAGE_FEATURES = "debug-tweaks"
 
 USER_CLASSES = "buildstats image-mklibs image-prelink"
 
-#Always add cmake to sdk
-TOOLCHAIN_HOST_TASK_append = " nativesdk-cmake"
-
-VIRTUAL-RUNTIME_dev_manager = "busybox-mdev"
-TCLIBC = "musl"
-
-DISTRO_FEATURES_remove = " wayland opengl pulseaudio opengles egl xcb "
-
 IMAGE_ROOTFS_EXTRA_SPACE = "0"

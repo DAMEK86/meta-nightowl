@@ -1,5 +1,7 @@
 MACHINE = "licheepizero"
 
+#DISTRO = "nightowl-tiny"
+
 MACHINE_FEATURES_remove = " apm"
 MACHINE_FEATURES_append = " touchscreen"
 
