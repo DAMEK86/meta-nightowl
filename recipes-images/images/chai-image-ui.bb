@@ -8,10 +8,25 @@ TSLIB = " \
     tslib-tests \
 "
 
+IMAGE_FEATURES += "hwcodecs"
+
+VIDEO_TOOLS = " \
+    gstreamer1.0 \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-ugly \
+    gstreamer1.0-libav \
+    gst-player \
+    gstreamer1.0-meta-base \
+    gst-examples \
+    gstreamer1.0-rtsp-server \
+"
+
 IMAGE_INSTALL_append = " \
     alsa-utils \
     htop \
     ${TSLIB} \
+    ${VIDEO_TOOLS} \
     x-window-example \
 "
 
