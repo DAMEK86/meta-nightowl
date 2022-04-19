@@ -50,6 +50,8 @@ The chai-image-ui starts htop as a example.
 The qt5 image instead contains an calculator example. For best user-experience, enable touchscreen support.
 To start the calculator, execute `/opt/qt-simple-calc/simpleCalculator`.
 
+To start bad_apple on **chai-image-ui**, execute `gst-play-1.0 --videosink=fbdevsink /usr/share/bad_apple_30.mp4` 
+
 The backed in splash screen appears on first reboot or second start.
 
 ## shutdown / reboot

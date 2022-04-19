@@ -20,10 +20,12 @@ VIDEO_TOOLS = " \
     gstreamer1.0-meta-base \
     gst-examples \
     gstreamer1.0-rtsp-server \
+    bad-apple \
 "
 
 IMAGE_INSTALL_append = " \
     alsa-utils \
+    i2c-tools \
     htop \
     ${TSLIB} \
     ${VIDEO_TOOLS} \
