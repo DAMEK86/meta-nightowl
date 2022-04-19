@@ -27,8 +27,14 @@ AUDIO_TOOLS = " \
     alsa-utils \
 "
 
-QT_TOOLS = " \
+FONTS = " \
+    fontconfig \
+    fontconfig-utils \
     liberation-fonts \
+    fonts \
+"
+
+QT_TOOLS = " \
     qtbase \
     qtbase-plugins \
     qtserialport \
@@ -84,6 +90,7 @@ IMAGE_INSTALL += " \
   ${SYSTEM_TOOLS_INSTALL} \
   ${UTILITIES_INSTALL} \
   ${NETWORK_APP} \
+  ${FONTS} \
   ${QT_TOOLS} \
   ${KERNEL_EXTRA_INSTALL} \
   ${TSLIB} \
