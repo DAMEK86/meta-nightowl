@@ -1,4 +1,4 @@
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 SRC_URI += " \
     file://ser2net.conf \
@@ -6,12 +6,12 @@ SRC_URI += " \
     file://init \
     "
 
-FILES_${PN} += " \
+FILES:${PN} += " \
     ${sysconfdir}/ser2net.conf \
     ${systemd_unitdir}/system/ser2net.service \
     "
 
-do_install_append() {
+do_install:append() {
     install -d ${D}${sysconfdir}
     install -m 0644 ${WORKDIR}/ser2net.conf ${D}${sysconfdir}
 

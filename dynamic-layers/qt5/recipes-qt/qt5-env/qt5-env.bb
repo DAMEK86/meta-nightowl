@@ -14,4 +14,4 @@ do_install() {
     install -m 0755 qt5-env.sh ${D}${sysconfdir}/profile.d
 }
 
-FILES_${PN} = "${sysconfdir}"
+FILES:${PN} = "${sysconfdir}"

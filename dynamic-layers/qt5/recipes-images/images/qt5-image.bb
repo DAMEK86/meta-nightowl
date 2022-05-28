@@ -101,9 +101,9 @@ IMAGE_INSTALL += " \
 EXTRA_IMAGE_FEATURES = "debug-tweaks"
 
 #Always add cmake to sdk
-TOOLCHAIN_HOST_TASK_append = " nativesdk-cmake"
+TOOLCHAIN_HOST_TASK:append = " nativesdk-cmake"
 
-PACKAGECONFIG_DISTRO_append_pn_qtbase = " linuxfb tslib "
-PACKAGECONFIG_FONTS_append_pn-qtbase = " fontconfig"
+PACKAGECONFIG:DISTRO:append_pn_qtbase = " linuxfb tslib "
+PACKAGECONFIG:FONTS:append_pn-qtbase = " fontconfig"
 
-IMAGE_INSTALL_append = " qtbase qtbase-plugins "
+IMAGE_INSTALL:append = " qtbase qtbase-plugins "

@@ -2,8 +2,8 @@ MACHINE = "licheepizero-dock"
 
 #DISTRO = "nightowl-tiny"
 
-MACHINE_FEATURES_remove = " apm"
-MACHINE_FEATURES_append = " touchscreen"
+MACHINE_FEATURES:remove = " apm"
+MACHINE_FEATURES:append = " touchscreen"
 
 #DL_DIR ?= "${HOME}/yocto/downloads"
 #SSTATE_DIR ?= "${HOME}/yocto/sstate"

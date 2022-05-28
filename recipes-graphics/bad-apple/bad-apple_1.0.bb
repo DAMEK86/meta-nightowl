@@ -11,4 +11,4 @@ do_install() {
   install -m 0755 bad_apple_30.mp4 ${D}${datadir}
 }
 
-FILES_${PN} = "${datadir}"
+FILES:${PN} = "${datadir}"

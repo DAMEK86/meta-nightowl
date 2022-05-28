@@ -1,5 +1,5 @@
 inherit chai-image-tiny
 
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
     ser2net \
 "

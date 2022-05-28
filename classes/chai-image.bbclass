@@ -2,7 +2,7 @@ DESCRIPTION = "A striped console image for Lichee Pi Zero, Zero-Dock Boards"
 LICENSE = "MIT"
 
 #Always add cmake to sdk
-TOOLCHAIN_HOST_TASK_append = " nativesdk-cmake"
+TOOLCHAIN_HOST_TASK:append = " nativesdk-cmake"
 
 DESCRIPTION = "A console image for Lichee Pi Zero, Zero-Dock Boards"
 

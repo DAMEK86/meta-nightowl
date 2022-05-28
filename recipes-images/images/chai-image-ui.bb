@@ -23,7 +23,7 @@ VIDEO_TOOLS = " \
     bad-apple \
 "
 
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
     alsa-utils \
     i2c-tools \
     htop \

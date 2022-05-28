@@ -10,11 +10,11 @@ SRCREV = "1af09d43f9a41ad3136a4fac9db63b9542692f91"
 
 S = "${WORKDIR}/git"
 
-do_install_append() {
+do_install:append() {
     install -d ${D}/opt/qt-simple-calc/
     install -m 0755 simpleCalculator ${D}/opt/qt-simple-calc/
 }
 
-FILES_${PN} += "/opt/qt-simple-calc/simpleCalculator"
+FILES:${PN} += "/opt/qt-simple-calc/simpleCalculator"
 
 inherit qmake5
