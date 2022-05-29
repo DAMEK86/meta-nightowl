@@ -1,6 +1,7 @@
 MACHINE = "licheepizero-dock"
 
 #DISTRO = "nightowl-tiny"
+#BOOT_DEV = "spinor"
 
 MACHINE_FEATURES:remove = " apm"
 MACHINE_FEATURES:append = " touchscreen"
