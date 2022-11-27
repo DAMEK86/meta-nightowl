@@ -1,0 +1,8 @@
+# This is needed for bitbake to pick up the includes
+BSPDIR := "${TOPDIR}/.."
+BBPATH := "${TOPDIR}:${BSPDIR}/sources/meta-nightowl/"
+
+require conf/variant/common/bblayers.conf
+
+BBLAYERS += " \
+"

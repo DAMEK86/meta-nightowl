@@ -140,3 +140,19 @@ for booting from flash
 ```bash
 sudo ./sunxi-tools/sunxi-fel spiflash-write 0x0 u-boot-sunxi-with-spl.bin
 ```
+
+## qemu target
+
+```sh
+# make sure, qemu-helper-native is bitbaked
+bitbake qemu-helper-native
+
+# Set up networking for qemu
+$ sudo ../sources/poky/scripts/runqemu-gen-tapdevs 1000 1000 4 tmp/sysroots-components/x86_64/qemu-helper-native/usr/bin
+
+# Give qemu permissions to access tun interfaces
+$ sudo setcap cap_net_admin+ep $(find tmp/work/ -name qemu-system-x86_64 | grep qemu-helper-native)
+
+# run qemu instance
+runqemu nographic qemuparams="-m 256 -enable-kvm"
+```
