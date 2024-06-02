@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 DEPENDS += "qtbase"
 
-SRC_URI = "git://github.com/vpapadopou/qt-simple-calculator;branch=master"
+SRC_URI = "git://github.com/vpapadopou/qt-simple-calculator;branch=master;protocol=https"
 SRCREV = "1af09d43f9a41ad3136a4fac9db63b9542692f91"
 
 S = "${WORKDIR}/git"
