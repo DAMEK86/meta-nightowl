@@ -13,8 +13,8 @@ repo sync
 For instance if you like to build variant `licheepizero-dock`, you can start with the following bash script:
 
 ```bash
-export TEMPLATECONF=$PWD/sources/meta-nightowl/conf/variant/licheepizero-dock
-source sources/poky/oe-init-build-env build
+export TEMPLATECONF=$PWD/sources/meta-nightowl/conf/templates/licheepizero-dock
+source sources/poky/oe-init-build-env dock
 
 bitbake chai-image
 ```

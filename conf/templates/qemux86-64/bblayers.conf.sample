@@ -2,7 +2,7 @@
 BSPDIR := "${TOPDIR}/.."
 BBPATH := "${TOPDIR}:${BSPDIR}/sources/meta-nightowl/"
 
-require conf/variant/common/bblayers.conf
+require conf/templates/common/bblayers.conf
 
 BBLAYERS += " \
 "
